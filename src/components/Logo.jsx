@@ -8,7 +8,7 @@ export default function Logo({ className = '', mark = true, wordmark = true }) {
       {mark && (
         <span className="relative inline-flex h-11 w-11 items-center justify-center transition-transform duration-500 ease-luxe group-hover:scale-105">
           <img
-            src="/logo.svg"
+            src={`${import.meta.env.BASE_URL}logo.svg`}
             alt=""
             draggable="false"
             className="h-full w-full select-none object-contain logo-mark"
